@@ -105,7 +105,7 @@ li {
 
 /* Icones */
 
-.circulo_L {
+.left {
     background: lightblue;
     border-radius: 50%;
     width: 200px;
@@ -117,9 +117,10 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: solid #091d29 2px;
 }
 
-.circulo_C {
+.center {
     background: lightblue;
     border-radius: 50%;
     width: 200px;
@@ -131,9 +132,10 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: solid #091d29 2px;
 }
 
-.circulo_R {
+.rigth{
     background: lightblue;
     border-radius: 50%;
     width: 200px;
@@ -145,4 +147,10 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: solid #091d29 2px;
 }
+
+.circulo:hover{
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
