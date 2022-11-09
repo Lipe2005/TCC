@@ -84,7 +84,7 @@
         }
         /* barra de pesquisa */
         
-        #formBusca {
+        #divBusca {
             background-color: #72d8e0;
             border: solid 1px;
             width: 560px;
@@ -92,7 +92,7 @@
             margin-top: -135px;
         }
         
-        #busca {
+        #Busca {
             float: left;
             background-color: transparent;
             padding-left: 5px;
@@ -174,29 +174,32 @@
         <img src="https://live.staticflickr.com/65535/52292209878_faa7da2bd3_b.jpg" width="350" height="150" alt="Pro_saude">
         <nav>
             <li>
-                <a class="button1" href="D:\3etim2022\TCC\html\TCChome.html">HOME</a>
+                <input type ="submit" class="button1" value="HOME"
+                        onclick="Location.href='/tcc/home/Home.php'">
 
-                <a class="button2" href="D:\3etim2022\TCC\html\TCC_tds_produtos.html">PRODUTOS</a>
+                <input type ="submit" class="button2" value="PRODUTOS"
+                        onclick="location.href='/tcc/produtos/Produtos.php'">
 
-                <a class="button4" href="D:\3etim2022\TCC\html\TCClogin.html">CONTA</a>
+                <input type ="submit" class="button3" value="CONTA"
+                        onclick="location.href='/tcc/Login/login.php'">
 
-                <a class="button5" href="D:\3etim2022\TCC\html\TCC_tds_produtos.html">AJUDA</a>
+                <input type ="submit" class="button2" value="AJUDA"
+                        onclick="location.href='/tcc/ajuda/Help.php'">
             </li>
         </nav>
 
 
-        <div action="busca.php" id="formBusca">
-            <input type="text" id="busca" placeholder="Buscar..." />
+        <form id="divBusca">
+            <input type="text" id="Busca" placeholder="Buscar..." onkeyup="search_produtos()" />
             <button class="btnBuscar"> <i class="fa-solid fa-magnifying-glass" name="btnBusca" ></i></button>
-        </div>
-
+    </form>
 
        <from class="header_fotos">
-            <div class="card right">
-                <img src="https://integralmedica.vteximg.com.br/arquivos/ids/155461-0-0/HIPERCALORICO-PROTEINA-NUTRIWHEY-BAUNILHA-POTE-907G-INTEGRALMEDICA.png?v=637002034035000000" class="image" height="230px" width="230px">
+            <button class="card right">
+                <img src="https://live.staticflickr.com/65535/52488979710_440a1815c5_n.jpg" class="image" height="240px" width="240px">
                 <h1>Whey Integralmedica</h1>
                 <h2>R$ 81,96</h2>
-            </div>
+            </button>
             <div class="card center">
                 <img src="https://d2vq4s943o8cb4.cloudfront.net/Custom/Content/Products/50/62/5062966_100-whey-protein-max-titanium-4443_l2_637437988317010154.png" class="image" height="250px" width="250px">
                 <h1>Whey Max Titanium</h1>
@@ -204,7 +207,7 @@
             </div>
             </h2>
             <div class="card left">
-                <img scr="https://blog.probiotica.com.br/wp-content/uploads/2016/05/Probiotica2016-PRO-LGlutamine-120g-1.png" class="image" height="250px" width="250px">
+                <img scr="https://www.flickr.com/photos/196319286@N06/52325834217/in/album-72177720301775433/" class="image" height="250px" width="250px">
                 <h1>Glutamina Probiótica</h1>
                 <h2>R$ 40,00</h2>
             </div>
@@ -323,6 +326,7 @@
             </div>
         </from>
     </header>
+    <script src="./busca.js"></script>
 </Body>
 
 </html>
