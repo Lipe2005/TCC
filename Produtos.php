@@ -99,8 +99,8 @@
             font-style: italic;
             font-size: 14px;
             border: none;
-            height: 32px;
-            width: 521px;
+            height: 37px;
+            width: 560px;
         }
         
         .btnBuscar {
@@ -168,7 +168,6 @@
         }
    </style>
 </head>
-
 <Body>
     <header>
         <img src="https://live.staticflickr.com/65535/52292209878_faa7da2bd3_b.jpg" width="350" height="150" alt="Pro_saude">
@@ -176,24 +175,17 @@
             <li>
                 <input type ="submit" class="button1" value="HOME"
                         onclick="Location.href='/tcc/home/Home.php'">
-
                 <input type ="submit" class="button2" value="PRODUTOS"
                         onclick="location.href='/tcc/produtos/Produtos.php'">
-
                 <input type ="submit" class="button3" value="CONTA"
                         onclick="location.href='/tcc/Login/login.php'">
-
                 <input type ="submit" class="button2" value="AJUDA"
                         onclick="location.href='/tcc/ajuda/Help.php'">
             </li>
         </nav>
-
-
         <form id="divBusca">
-            <input type="text" id="Busca" placeholder="Buscar..." onkeyup="search_produtos()" />
-            <button class="btnBuscar"> <i class="fa-solid fa-magnifying-glass" name="btnBusca" ></i></button>
-    </form>
-
+            <input type="text" id="Busca" placeholder="Buscar..."/>
+        </form>
        <from class="header_fotos">
             <button class="card right">
                 <img src="https://live.staticflickr.com/65535/52488979710_440a1815c5_n.jpg" class="image" height="240px" width="240px">
@@ -230,7 +222,6 @@
                 <h2>R$ 159,90</h2>
             </div>
         </from>
-
         <from class="header_fotos">
             <div class="card right">
                 <img src="https://emporioquatroestrelas.vteximg.com.br/arquivos/ids/158685-292-292/whey-baunilha-1.png?v=636978513662500000" class="image" height="250px" width="250px">
@@ -249,7 +240,6 @@
                 <h2>R$ 84,00</h2>
             </div>
         </from>
-
         <from class="header_fotos">
             <div class="card right">
                 <img src="https://www.madrugaosuplementos.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/probiotica2019-creatina-pura-300g_2_.png" class="image" height="250px" width="250px">
@@ -268,7 +258,6 @@
                 <h2>R$69,90</h2>
             </div>
         </from>
-
         <from class="header_fotos">
             <div class="card right">
                 <img src="https://ww.madrugaosuplementos.com.br/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/o/n/on_creatina_em_po_300g.png" class="image" height="250px" width="250px">
@@ -287,7 +276,6 @@
                 <h2></h2>
             </div>
         </from>
-
         <from class="header_fotos">
             <div class="card right">
                 <img src="" class="image" height="250px" width="250px">
@@ -306,7 +294,6 @@
                 <h2></h2>
             </div>
         </from>
-
         <from class="header_fotos">
             <div class="card right">
                 <img src="" class="image" height="250px" width="250px">
@@ -328,5 +315,4 @@
     </header>
     <script src="./busca.js"></script>
 </Body>
-
 </html>
