@@ -14,21 +14,16 @@
     margin: 0 auto;
     padding: 0;
 }
-
 body {
     background-color: #d3e8f7;
     display: flex;
 }
-
 header {
     background-color: #2bd9e5;
     width: 100%;
     height: 201px;
 }
-
-
 /* Botões */
-
 li {
     max-width: 2000px;
     margin: 0;
@@ -38,7 +33,6 @@ li {
     height: 47px;
     border-bottom: 5px solid #091d29
 }
-
 .button1 {
     color: #000000;
     background-color: #2bd9e5;
@@ -48,7 +42,6 @@ li {
     margin-top: 10px;
     margin-left: 5px;
 }
-
 .button2 {
     color: #000000;
     background-color: #2bd9e5;
@@ -57,7 +50,6 @@ li {
     border: none;
     margin-top: 10px;
 }
-
 .button3 {
     color: #000000;
     background-color: #2bd9e5;
@@ -66,7 +58,6 @@ li {
     border: none;
     margin-top: 10px;
 }
-
 .button4 {
     color: #000000;
     background-color: #2bd9e5;
@@ -75,7 +66,6 @@ li {
     border: none;
     margin-top: 10px;
 }
-
 .button5 {
     color: #000000;
     background-color: #2bd9e5;
@@ -84,10 +74,7 @@ li {
     border: none;
     margin-top: 10px;
 }
-
-
 /*  barra de pesquisa */
-
 #divBusca {
     background-color: #72d8e0;
     border: solid 1px;
@@ -95,7 +82,6 @@ li {
     height: 37px;
     margin-top: -135px;
 }
-
 #txtBusca {
     float: left;
     background-color: transparent;
@@ -106,17 +92,13 @@ li {
     height: 32px;
     width: 521px;
 }
-
 .btnBuscar {
     width: 34px;
     height: 35px;
     background-color: #72d8e0;
     border: none;
 }
-
-
 /* Icones */
-
 .left {
     background: lightblue;
     border-radius: 50%;
@@ -131,7 +113,6 @@ li {
     align-items: center;
     border: solid #091d29 2px;
 }
-
 .center {
     background: lightblue;
     border-radius: 50%;
@@ -146,8 +127,7 @@ li {
     align-items: center;
     border: solid #091d29 2px;
 }
-
-.rigth{
+.right{
     background: lightblue;
     border-radius: 50%;
     width: 200px;
@@ -161,37 +141,34 @@ li {
     align-items: center;
     border: solid #091d29 2px;
 }
-
 .circulo:hover{
         transform: translateY(-5px);
         cursor: pointer;
 }
+
+.imagem{
+    margin-left: 400x;
+    margin-top: 200px;
+    border: solid #091d29 2px;
+}
+
+.imagem:hover{
+        transform: translateY(-5px);
+        cursor: pointer;
+}
    </style>
-
 </head>
-
 <Body>
     <header>
         <img src="https://live.staticflickr.com/65535/52292209878_faa7da2bd3_b.jpg" width="350" height="150" alt="Pro_saude">
-
         <nav>
             <li>
-
                 <a class="button1" href="D:\3etim2022\TCC\html\TCChome.html">HOME</a>
-
                 <a class="button2" href="D:\3etim2022\TCC\html\TCC_tds_produtos.html">PRODUTOS</a>
-
                 <a class="button4" href="D:\3etim2022\TCC\html\TCC_tds_produtos.html">CONTA</a>
-
                 <a class="button5" href="D:\3etim2022\TCC\html\TCC_tds_produtos.html">AJUDA</a>
             </li>
         </nav>
-
-        <form action="TCCphp.php" id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <button class="btnBuscar"> <i class="fa-solid fa-magnifying-glass" name="btnBusca" ></i></button>
-        </form>
-
         <div class="circulo left">
             <h1 width="500" height="500"><i class="fa-solid fa-person-swimming fa-4x"></i></i>
             </h1>
@@ -202,7 +179,8 @@ li {
         <div class="circulo right">
             <h1 width="500" height="500"><i class="fa-solid fa-jar fa-4x"></i></h1>
         </div>
+        <div> <img src="https://www.recreiodajuventude.com.br/userfiles/conteudos/academia-guarany3.jpg" class="imagem"> </div>
+        <div> <img src="https://scproduction.s3.sa-east-1.amazonaws.com/wysiwyg_uploads/cms/images/2018/10/01/19/07-h9ytse3i.JPG" class="imagem"> </div>
     </header>
 </Body>
-
 </html>
