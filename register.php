@@ -100,14 +100,43 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #e4f3fd;
+        }
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .card-header {
+            padding-bottom: 50px;
+            opacity: 0.8;
+            color: #000000;
+        }
+        
+        .card-header::after {
+            content: "";
+            width: 110px;
+            height: 1px;
+            display: block;
+            margin-top: -17px;
+            margin-left: -5px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="wrapper">
+        <div class="card-header">
         <h2>Cadastro</h2>
-        <p>Por favor, preencha este formulário para criar uma conta.</p>
+        <a>Por favor, preencha este formulário para criar uma conta.</a>
+        
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Nome do usuário</label>
@@ -130,6 +159,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <p>Já tem uma conta? <a href="login.php">Entre aqui</a>.</p>
         </form>
+        </div>
     </div>    
 </body>
 </html>
