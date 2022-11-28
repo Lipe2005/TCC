@@ -5,7 +5,7 @@ define('DB_PASSWORD', '');
 define('DB_NAME', 'tcc8');
 
 try{
-    $pdo = new PDO("mysqli:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
+    $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
     // Defina o modo de erro PDO para exceção
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e){
