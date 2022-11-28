@@ -138,6 +138,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <a>Por favor, preencha este formulário para criar uma conta.</a>
         
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <br>
             <div class="form-group">
                 <label>Nome do usuário</label>
                 <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
@@ -162,4 +163,3 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
     </div>    
 </body>
-</html>
